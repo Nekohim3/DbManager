@@ -31,6 +31,7 @@ namespace DBManager
 
         public SelectDirViewModel(Action close)
         {
+            Cancel           = true;
             Close            = close;
             SelectDirCommand = new DelegateCommand(OnSelectDir);
             SaveCommand      = new DelegateCommand(OnSave);
@@ -51,12 +52,12 @@ namespace DBManager
 
         private void OnSave()
         {
+            Cancel = false;
             Close?.Invoke();
         }
 
         private void OnCancel()
         {
-            Cancel = true;
             Close?.Invoke();
         }
         
