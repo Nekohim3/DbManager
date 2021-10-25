@@ -2,9 +2,9 @@
 
 namespace DBManager
 {
-    public partial class DBManagerForm : Window
+    public partial class DBAddForm : Window
     {
-        public DBManagerForm()
+        public DBAddForm()
         {
             InitializeComponent();
         }

@@ -16,7 +16,7 @@ namespace DBManager
         {
             InitializeComponent();
             DataContext = new MWVM();
-            SQLService.BackupDatabase("DESKTOP-GDLC74K\\MSSQLSERVER12", "SOFTMARINE_COMPANY", @"C:\WORK\123123.bak");
+            //SQLService.BackupDatabase("DESKTOP-GDLC74K\\MSSQLSERVER12", "SOFTMARINE_COMPANY", @"C:\WORK\123123.bak");
             //var q = SQLService.GetDatabases("DESKTOP-GDLC74K\\MSSQLSERVER12");
             //BackupRestore.RestoreDatabase("DESKTOP-GDLC74K\\MSSQLSERVER12", "SOFTMARINE_SHIP", @"C:\WORK\SHIP_v47_EI.bak");
         }

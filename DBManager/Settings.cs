@@ -12,6 +12,8 @@ namespace DBManager
     {
         public string                         DirForDbData { get; set; }
         public ObservableCollection<DataBase> DbList       { get; set; }
+        public string                         Login        { get; set; }
+        public string                         Pass         { get; set; }
 
         public Settings()
         {
@@ -26,17 +28,25 @@ namespace DBManager
 
         public bool AddDb(DataBase db)
         {
-            if (DbList.Count(x => x.Instance == db.Instance && x.Name == db.Name) != 0) return false;
+            Logger.Info($"AddDb({db.Instance}_{db.Name})");
+            if (DbList.Count(x => x.Instance == db.Instance && x.Name == db.Name) != 0)
+            {
+                Logger.Info($"AddDb({db.Instance}_{db.Name}) fail: alreadyExist");
+                return false;
+
+            }
 
             DbList.Add(db);
             Save();
+            Logger.Info($"AddDb({db.Instance}_{db.Name}) succ");
             return true;
 
         }
 
         public void RemoveDb(DataBase db)
         {
-            DbList.Remove(db);
+            var q = DbList.Remove(db);
+            Logger.Info($"RemoveDb({db.Instance}_{db.Name}) {(q ? "succ" : "fail (not found)")}");
             Save();
         }
         

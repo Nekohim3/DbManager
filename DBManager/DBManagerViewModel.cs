@@ -10,7 +10,7 @@ using Microsoft.SqlServer.Management.Smo;
 
 namespace DBManager
 {
-    public class DBManagerViewModel : NotificationObject
+    public class DBAddViewModel : NotificationObject
     {
         public DelegateCommand SaveCommand   { get; }
         public DelegateCommand CancelCommand { get; }
@@ -68,9 +68,10 @@ namespace DBManager
         public Action Close;
         public bool   Cancel { get; set; }
         
-        public DBManagerViewModel(Action close)
+        public DBAddViewModel(Action close)
         {
-            Close        = close;
+            Cancel = true;
+            Close  = close;
 
             SaveCommand   = new DelegateCommand(OnSave);
             CancelCommand = new DelegateCommand(OnCancel);
@@ -80,12 +81,12 @@ namespace DBManager
 
         private void OnSave()
         {
+            Cancel = false;
             Close?.Invoke();
         }
 
         private void OnCancel()
         {
-            Cancel = true;
             Close?.Invoke();
         }
 
