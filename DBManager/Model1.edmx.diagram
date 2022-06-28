@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1708130394c140fe8ff6edd1b0122992" Name="Diagram1">
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ADESettings" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_AttachedFile" Width="1.5" PointX="1.5" PointY="207.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_AttachedFileInfo" Width="1.5" PointX="3.75" PointY="206.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_BaseRule" Width="1.5" PointX="6" PointY="235.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ChangeInfo" Width="1.5" PointX="9" PointY="215.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_Country" Width="1.5" PointX="11.25" PointY="369" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ExportImportInfo" Width="1.5" PointX="6" PointY="220.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ExportImportPackage" Width="1.5" PointX="3.75" PointY="231.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ExportImportStepStatistic" Width="1.5" PointX="8.25" PointY="212.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_FileData" Width="1.5" PointX="15" PointY="311.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_FileInfo" Width="1.5" PointX="17.25" PointY="310.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_FunctionRule" Width="1.5" PointX="6" PointY="239" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_Person" Width="1.5" PointX="16.5" PointY="295.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_PersonServiceTime" Width="1.5" PointX="24.75" PointY="260.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_Rank" Width="1.5" PointX="11.25" PointY="343.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_RemoveCommand" Width="1.5" PointX="6" PointY="216.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_Role" Width="1.5" PointX="3.75" PointY="233.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_Ship" Width="1.5" PointX="3.75" PointY="213.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_Ship_File" Width="1.5" PointX="6" PointY="213" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipGroup" Width="1.5" PointX="1.5" PointY="216.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipOwner" Width="1.5" PointX="1.5" PointY="219.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipProject" Width="1.5" PointX="11.25" PointY="213.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipProperty" Width="1.5" PointX="3.75" PointY="210.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipPropertyValue" Width="1.5" PointX="6" PointY="210" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipSetting" Width="1.5" PointX="19.5" PointY="267" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipStatus" Width="1.5" PointX="3" PointY="226.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_ShipType" Width="1.5" PointX="11.25" PointY="188.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_User" Width="1.5" PointX="0.75" PointY="225.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_User_RequisitionDepartment" Width="1.5" PointX="13.5" PointY="222.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_UserAccessByUnit" Width="1.5" PointX="3" PointY="348.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.C_UserAccount" Width="1.5" PointX="6" PointY="227.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_BudgetItem" Width="1.5" PointX="21.75" PointY="287.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_BudgetPlan" Width="1.5" PointX="29.75" PointY="265.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_BudgetPlanItem" Width="1.5" PointX="32" PointY="288" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_Currency" Width="1.5" PointX="11.25" PointY="205" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_PaidmentDocument" Width="1.5" PointX="21.75" PointY="292.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_PaidmentPosition" Width="1.5" PointX="24" PointY="290.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_Rate" Width="1.5" PointX="29.75" PointY="256.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_ShipOwnerCurrencyBaseYear" Width="1.5" PointX="19.5" PointY="306.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.bdg_Supplier" Width="1.5" PointX="19.5" PointY="310.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.BlockData" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.CommonData" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_Document" Width="1.5" PointX="19.25" PointY="232" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_Document_File" Width="1.5" PointX="24.5" PointY="235.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_DocumentTitle" Width="1.5" PointX="13.5" PointY="269.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_DocumentTitle_File" Width="1.5" PointX="21.5" PointY="248.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_File" Width="1.5" PointX="17" PointY="198.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_FileDataExportInfo" Width="1.5" PointX="24.5" PointY="227.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_FileInfo" Width="1.5" PointX="19.25" PointY="226.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_Partition" Width="1.5" PointX="11.25" PointY="326.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_smsChangeDocument" Width="1.5" PointX="16.75" PointY="223.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_smsDocument" Width="1.5" PointX="13.5" PointY="205.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_smsDocument_File" Width="1.5" PointX="21.5" PointY="216.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_smsDocument_Ship_NotVisible" Width="1.5" PointX="15.75" PointY="206.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.dms_smsPartition" Width="1.5" PointX="11.25" PointY="180.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.hseq_Inspection" Width="1.5" PointX="13.5" PointY="232.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.hseq_Inspection_File" Width="1.5" PointX="27.5" PointY="231.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.hseq_InspectionName" Width="1.5" PointX="11.25" PointY="274" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.hseq_InspectionPlan" Width="1.5" PointX="13.5" PointY="274.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.hseq_Inspector" Width="1.5" PointX="11.25" PointY="192.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.hseq_Observation" Width="1.5" PointX="23.75" PointY="275.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.hseq_Observation_File" Width="1.5" PointX="29" PointY="251.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_FuelOperation" Width="1.5" PointX="14.25" PointY="218.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_FuelOperation_File" Width="1.5" PointX="24.5" PointY="224.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_FuelOperationQuantity" Width="1.5" PointX="16.5" PointY="255.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_FuelType" Width="1.5" PointX="11.25" PointY="297" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_FuelType_Ship" Width="1.5" PointX="16.5" PointY="259.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_FuelType_VoyagePeriod" Width="1.5" PointX="13.5" PointY="256.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_Port" Width="1.5" PointX="11.25" PointY="333.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_Report_EmissionSource" Width="1.5" PointX="11.25" PointY="222.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_Voyage" Width="1.5" PointX="16.5" PointY="279.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.mrv_VoyagePeriod" Width="1.5" PointX="21.75" PointY="268" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Access" Width="1.5" PointX="18.75" PointY="262" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_CodeTMK" Width="1.5" PointX="21.75" PointY="220" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_CompanySetting" Width="1.5" PointX="11.25" PointY="386.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_CompanySetting_LogoFile" Width="1.5" PointX="24.5" PointY="306.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Counter" Width="1.5" PointX="16.5" PointY="289.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_CounterLogRecord" Width="1.5" PointX="18.75" PointY="258.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_CounterType" Width="1.5" PointX="11.25" PointY="390" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_File" Width="1.5" PointX="20" PointY="211.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_FileDataExportInfo" Width="1.5" PointX="27.5" PointY="227.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_FileInfo" Width="1.5" PointX="22.25" PointY="224.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_FileInfo_Ship" Width="1.5" PointX="16.5" PointY="227.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_FileInfoManagedByShip" Width="1.5" PointX="11.25" PointY="231.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_FileLib" Width="1.5" PointX="12" PointY="238.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_FileLibInfo" Width="1.5" PointX="14.25" PointY="226" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_FileManagedByShip" Width="1.5" PointX="9" PointY="242.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_InnerCompanySetting" Width="1.5" PointX="11.25" PointY="356.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Job" Width="1.5" PointX="29" PointY="278.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Job_File" Width="1.5" PointX="34.25" PointY="246" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Job_OldCopy" Width="1.5" PointX="31.25" PointY="298.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Job_Spare" Width="1.5" PointX="31.25" PointY="251.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobHistoryCounterRecord" Width="1.5" PointX="29" PointY="321.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobHistoryRecord" Width="1.5" PointX="26.75" PointY="253.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobHistoryRecord_File" Width="1.5" PointX="29" PointY="244.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobOrderItem" Width="1.5" PointX="34.25" PointY="251" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobOrderItem_File" Width="1.5" PointX="36.5" PointY="239.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobOrderItem_InnerInfo" Width="1.5" PointX="36.5" PointY="234.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobPeriod" Width="1.5" PointX="32.25" PointY="258.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobPeriod_OldCopy" Width="1.5" PointX="34.5" PointY="259.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobPlan" Width="1.5" PointX="36.5" PointY="280.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobReqApprovalStage" Width="1.5" PointX="34.25" PointY="234.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobStatisticSetting" Width="1.5" PointX="11.25" PointY="401.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_JobType" Width="1.5" PointX="11.25" PointY="307.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_MaterialCatalogue" Width="1.5" PointX="11.25" PointY="379.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_MaterialCatalogueSection" Width="1.5" PointX="13.5" PointY="297.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Object" Width="1.5" PointX="16.5" PointY="214.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Object_Counter" Width="1.5" PointX="21.75" PointY="299.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Object_File" Width="1.5" PointX="26.75" PointY="223.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Object_OldCopy" Width="1.5" PointX="18.75" PointY="214.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Object_Spare" Width="1.5" PointX="26.75" PointY="235.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_ObjectCodePart" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_OperatingTime" Width="1.5" PointX="18.75" PointY="302.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_OrderItemHistory" Width="1.5" PointX="27.5" PointY="240.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Partition" Width="1.5" PointX="11.25" PointY="195.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_ProposeItem" Width="1.5" PointX="6" PointY="230.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairList" Width="1.5" PointX="16.25" PointY="235.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairList_File" Width="1.5" PointX="24.5" PointY="232" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListApprovalStage" Width="1.5" PointX="13.5" PointY="293.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListApproveTable" Width="1.5" PointX="19.5" PointY="253.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListItem" Width="1.5" PointX="21.75" PointY="260.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListItem_File" Width="1.5" PointX="24.5" PointY="245" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListMeasureUnit" Width="1.5" PointX="11.25" PointY="315.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListPartition" Width="1.5" PointX="11.25" PointY="209.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListRank" Width="1.5" PointX="11.25" PointY="372.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListSpare" Width="1.5" PointX="27" PointY="266" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairListSpare_File" Width="1.5" PointX="31.25" PointY="245.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairPlan" Width="1.5" PointX="13.5" PointY="304.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairPlanRepairType" Width="1.5" PointX="11.25" PointY="394.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RepairPlanTableManage" Width="1.5" PointX="11.25" PointY="185" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Requisition" Width="1.5" PointX="16.5" PointY="271.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Requisition_File" Width="1.5" PointX="24.5" PointY="250.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Requisition_InnerInfo" Width="1.5" PointX="18.75" PointY="245.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RequisitionDepartment" Width="1.5" PointX="11.25" PointY="216.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RequisitionDestination" Width="1.5" PointX="11.25" PointY="376.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RequisitionRank" Width="1.5" PointX="27.5" PointY="219.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_RequisitionType" Width="1.5" PointX="11.25" PointY="177.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SFI" Width="1.5" PointX="11.25" PointY="397.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Spare_File" Width="1.5" PointX="21.75" PointY="236.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Spare_Ship" Width="1.5" PointX="15.75" PointY="249.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareLib" Width="1.5" PointX="13.5" PointY="280.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareLib_File" Width="1.5" PointX="18.5" PointY="248.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Sparelib_InnerInfo" Width="1.5" PointX="15.75" PointY="286.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareLib_OldCopy" Width="1.5" PointX="15.75" PointY="302" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareManufacturerCatalog" Width="1.5" PointX="11.25" PointY="349.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareOrderItem" Width="1.5" PointX="29.75" PointY="236.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareOrderItem_File" Width="1.5" PointX="32" PointY="232.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareOrderItem_InnerInfo" Width="1.5" PointX="32" PointY="227.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_SpareReqApprovalStage" Width="1.5" PointX="29.75" PointY="219.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_StoreInventoryRecord" Width="1.5" PointX="32" PointY="280.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_StoreItem" Width="1.5" PointX="18.5" PointY="239.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_StoreLocation" Width="1.5" PointX="16.25" PointY="232" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_StoreReserve" Width="1.5" PointX="21.75" PointY="243.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_StoreReserveForJobPlan" Width="1.5" PointX="38.75" PointY="260.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_StoreSection" Width="1.5" PointX="11.25" PointY="226.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TechPlace" Width="1.5" PointX="18.75" PointY="280" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_Template" Width="1.5" PointX="17" PointY="201" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TGroup" Width="1.5" PointX="14.75" PointY="201.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TJob" Width="1.5" PointX="21.5" PointY="279.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TJob_File" Width="1.5" PointX="26.75" PointY="244.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TJob_Spare" Width="1.5" PointX="26.75" PointY="248.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TJobPeriod" Width="1.5" PointX="24.75" PointY="300.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TObject" Width="1.5" PointX="19.25" PointY="219.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TObject_File" Width="1.5" PointX="21.5" PointY="233" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TObject_Spare" Width="1.5" PointX="22.5" PointY="253.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TRepairList" Width="1.5" PointX="13.5" PointY="212.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TRepairList_File" Width="1.5" PointX="24.5" PointY="221.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TRepairListItem" Width="1.5" PointX="15.75" PointY="263.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TRepairListItem_File" Width="1.5" PointX="24.5" PointY="247.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TRepairListSpare" Width="1.5" PointX="24" PointY="269.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_TRepairListSpare_File" Width="1.5" PointX="31.25" PointY="248.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.pms_User_Partition" Width="1.5" PointX="13.5" PointY="210.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_CheckList" Width="1.5" PointX="16.5" PointY="210.25" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_CheckListItem" Width="1.5" PointX="18.75" PointY="296.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_DocumentType" Width="1.5" PointX="11.25" PointY="382.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonCard" Width="1.5" PointX="19.5" PointY="289.375" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonCard_File" Width="1.5" PointX="24.5" PointY="264.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonCard_InnerInfo" Width="1.5" PointX="27.75" PointY="260.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonCard_ShipType" Width="1.5" PointX="21.75" PointY="240.5" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonCardPhoto" Width="1.5" PointX="24.5" PointY="257.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonContract" Width="1.5" PointX="26.75" PointY="272.625" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonContract_File" Width="1.5" PointX="29" PointY="248.875" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonDocument" Width="1.5" PointX="24.75" PointY="295.75" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_PersonDocument_File" Width="1.5" PointX="30" PointY="261.125" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_Qualification" Width="1.5" PointX="11.25" PointY="353" />
+        <EntityTypeShape EntityType="SOFTMARINE_COMPANYModel.prs_СrewСhangePlan" Width="1.5" PointX="24.5" PointY="281.75" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__AttachedFileInfo__AttachedFile" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Ship_File__AttachedFileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_BaseRule__Role" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ChangeInfo__ExportInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ChangeInfo__ImportInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ChangeInfo__User" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ChangeInfo__UserCreator" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Country__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Person_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__PersonServiceTime__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Rank_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipSetting_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipType__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_Document__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_DocumentTitle__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_FileInfo__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_FileInfo__ChangeInfoFileData" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_Partition__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsChangeDocument__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsPartition__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Inspection__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_InspectionName__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Inspector__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Observation__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelOperation__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelOperationQuantity__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelType__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelType_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelTypeVoyagePeriod_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_Port__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_Report_EmissionSource_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_Voyage__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_VoyagePeriod__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CatalogueSpare_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CodeTMK__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CompanySetting__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Counter_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CounterLogRecord_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CounterType_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfo__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfo__ChangeInfoFileData" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfo_Ship__ChangeInfoFileData" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfoManagedByShip_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfoManagedByShip_pms_ChangeInfoFileData" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileLibInfo__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileLibInfo__ChangeInfoFileData" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_InnerCompanySetting__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_File_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_Spare_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryRecord_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_InnerInfo__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPeriod_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPlan_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobStatisticSetting__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobType_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_MaterialCatalogue_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_MaterialCatalogueSection_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_File_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectCounter_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectSpare_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_OperatingTime__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Partition_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairList__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListApprovalStage__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListApproveTable__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListItem__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListPartition__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListRank__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListSpare__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListUnits__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairPlan__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairPlanRepairType__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairPlanTableManage__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition_InnerInfo__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RequisitionDepartment__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RequisitionDestination__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RequisitionType__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SFI__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ShipFileInfo_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Spare_File_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Spare_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareManufacturerCatalog__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_InnerInfo__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreInventoryRecord_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreItem_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreLocation_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreSection_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TechPlace__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob_File_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob_Spare_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJobPeriod_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_File_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_Spare_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairList__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListItem__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListSpare__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TSpare_File_pms_ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_CheckList__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_CheckListItem__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_DocumentType__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_InnerInfo__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_ShipType__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonDocument__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_Qualification__ChangeInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipSetting__Country" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard__Country" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ExportImportInfo__ExportImportPackage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ExportImportInfo__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ExportImportInfo__UserCreator" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ExportImportInfo__UserLoader" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ExportImportStepStatistic__ExportImportInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__FileInfo__FileData" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_FunctionRule__Role" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Person__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Person__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Person_pms_RepairListRank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__PersonServiceTime__Person" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_PaidmentDocument_Person" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Observation__Person" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_Person_pms_RequisitionRank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Access__Person" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryRecord__Person" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TechPlace__Person" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Observation__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPlan__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreInventoryRecord__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TechPlace__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_CheckListItem__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract__Rank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__RemoveCommand__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_UserAccount__Role" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Ship__ShipGroup" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__Ship__ShipOwner" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipPropertyValue__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipSetting__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipStatus__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_BudgetPlan__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_PaidmentPosition_Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_Document__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_FileDataExportInfo__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Inspection__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_InspectionPlan__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelOperation__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelType__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_Report_EmissionSource__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_Voyage__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CodeTMK__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Counter__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileDataExportInfo__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfoManagedByShip__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ProposeItem__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairList__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListApproveTable__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairPlan__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ShipFileInfo__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Spare__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreInventoryRecord__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreLocation__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreReserve__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreReserveForJobPlan__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreSection__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TechPlace__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_CheckList__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_Ship_File__Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_BudgetItem__ShipOwner" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_ShipOwnerCurrencyBaseYear__ShipOwner" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipSetting__ShipProject" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairList__ShipProject" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipPropertyValue__ShipProperty" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipSetting__ShipType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipStatus__User_CreatedBy" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK__ShipStatus__User_UpdatedBy" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairList__ShipType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_CheckList__ShipType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_ShipType__ShipType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Access__User" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ProposeItem__User" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_User_Partition__User" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_User_RequisitionDepartment_User" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_UserAccessByUnit__User" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_UserAccount__User" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_User_RequisitionDepartment_pms_RequisitionDepartment" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_BudgetItem_bdg_BudgetItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_BudgetPlanItem_bdg_BudgetItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_PaidmentPosition_bdg_BudgetItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_BudgetPlan_bdg_ShipOwnerCurrencyBaseYear" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_BudgetPlanItem_bdg_BudgetPlan" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_BudgetPlanItem_bdg_Supplier" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_PaidmentDocument_bdg_Currency" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_Rate_bdg_Currency" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_ShipOwnerCurrencyBaseYear_bdg_Currency" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairList_bdg_Currency" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairList_bdg_Currency" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_PaidmentDocument_bdg_ShipOwnerCurrencyBaseYear" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_PaidmentDocument_bdg_Supplier" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_PaidmentPosition_bdg_PaidmentDocument" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_bdg_Rate_bdg_ShipOwnerCurrencyBaseYear" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_Document_dms_DocumentTitle" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_Document_File_dms_Document" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_Document_File_dms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_DocumentTitle_dms_Partition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_DocumentTitle_File_dms_DocumentTitle" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_DocumentTitle_File_dms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_FileInfo_dms_File" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_FileDataExportInfo__FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument_File_dms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsChangeDocument_dms_smsDocument" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument_dms_smsDocument" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument_dms_smsPartition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument_File_dms_smsDocument" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsDocument_Ship_NotVisible_dms_smsPartition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_dms_smsPartition_Parent" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Inspection_File_hseq_Inspection" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Inspection_hseq_InspectionName" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Inspection_hseq_Inspector" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Observation_hseq_Inspection" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Inspection_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_InspectionPlan_hseq_InspectionName" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Observation_File_hseq_Observation" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_hseq_Observation_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelOperation_File_mrv_FuelOperation" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelOperationQuantity_mrv_FuelOperation" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelOperation_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelOperationQuantity_mrv_FuelType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelType_mrv_FuelType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelTypeVoyagePeriod_mrv_FuelType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_FuelType_mrv_VoyagePeriod" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_Voyage_mrv_Port" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_VoyagePeriod_mrv_PortEnd" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_VoyagePeriod_mrv_PortStart" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_mrv_VoyagePeriod_mrv_Voyage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CodeTMK_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CompanySetting_LogoFile_pms_CompanySetting" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CompanySetting_LogoFile_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Counter_pms_CounterLogRecord" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Counter_pms_CounterType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Counter_pms_Partition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CounterLogRecord_pms_Counter" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryCounterRecord_pms_Counter" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectCounter_pms_Counter" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryCounterRecord_pms_CounterType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectCounter_pms_CounterType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_OperatingTime_pms_CounterType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJobPeriod_pms_CounterType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfo_pms_File" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileDataExportInfo__FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairList_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListItem_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListSpare_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairList_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListItem_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListSpare_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCardPhoto_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonDocument_File_pms_FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_File__ShipFileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_File__ShipFileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ShipFileInfo__FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Spare_File__ShipFileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileInfoManagedByShip_pms_FileManagedByShip" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryRecord_File_pms_FileInfoManagedByShip" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_FileLibInfo_pms_FileLib" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob_File__FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_File__FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TSpare_File__FileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_File_pms_Job" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_OldCopy_pms_Job" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_pms_JobHistoryRecord" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_pms_JobType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_pms_TJob" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryRecord_pms_Job" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_pms_Job" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPeriod_pms_Job" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPlan_pms_Job" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobSpare_pms_Job" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_File_pms_TJob_File" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Job_Spare_pms_TJob_Spare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobSpare_pms_Spare_Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryCounterRecord_pms_JobHistoryRecord" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryRecord_File_pms_JobHistoryRecord" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryRecord_JobHistoryRecordPreviousPostponed" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobHistoryRecord_pms_JobPlan" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreInventoryRecord_pms_JobHistoryRecord" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_File_pms_JobOrderItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_InnerInfo_pms_JobOrderItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_pms_OrderItemHistory" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_pms_Requisition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPlan_pms_JobOrderItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobOrderItem_InnerInfo_pms_JobReqApprovalStage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPeriod_OldCopy_pms_JobPeriod" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPeriod_pms_Object_Counter" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobPeriod_pms_TJobPeriod" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreReserveForJobPlan_pms_JobPlan" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobReqApprovalStage_pms_JobReqApprovalStage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_JobReqApprovalStage_pms_RequisitionRank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob_pms_JobType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_MCatalogSection_pms_MCatalogue" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CatalogueSpare_pms_MaterialCatalogueSection" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_MCatalogSection_pms_MCatalogSection" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_File_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_OldCopy_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_pms_Partition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_pms_TObject" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_pms_TObjectIsSubLink" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectCounter_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectSpare_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_OperatingTime_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListItem_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TechPlace_pms_Object" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Object_File_pms_TObject_File" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectSpare_pms_Spare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_ObjectSpare_pms_TObjectSpare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_OperatingTime_pms_RepairList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_pms_OrderItemHistory" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_User_Partition_pms_Partition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairList_File_pms_RepairList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairList_pms_RepairListApprovalStage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListApproveTable_pms_RepairList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListItem_pms_RepairList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListApprovalStage_pms_RepairListRank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListApproveTable_pms_RepairListApprovalStage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListItem_File_pms_RepairListItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListItem_pms_RepairListItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListItem_pms_RepairListMeasureUnit" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListSpare_pms_RepairListItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListSpare_pms_RepairListMeasureUnit" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListItem_pms_RepairListMeasureUnit" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListSpare_pms_RepairListMeasureUnit" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListSpare_File_pms_RepairListSpare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairListSpare_pms_Spare_Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_RepairPlan_pms_RepairPlanRepairType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition_File_pms_Requisition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition_InnerInfo_pms_Requisition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition_pms_RequisitionDepartment" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition_pms_RequisitionDestination" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Requisition_pms_RequisitionType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_pms_Requisition" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_pms_RequisitionDepartment" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareReqApprovalStage_pms_RequisitionRank" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Spare_File_pms_CatalogueSpare_File" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Spare_File_pms_Spare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Spare_pms_SpareLib" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_pms_Spare_Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreItem_pms_Spare_Ship" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CatalogueSpare_File_pms_CatalogueSpare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_CatalogueSpare_OldCopy_pms_CatalogueSpare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Sparelib_InnerInfo_pms_Sparelib" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareLib_pms_SpareManufacturerCatalog" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreItem_pms_SpareLib" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJobSpare_pms_CatalogueSpare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObjectSpare_pms_CatalogueSpare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListSpare_pms_SpareLib" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_File_pms_SpareOrderItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItem_InnerInfo_pms_SpareOrderItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreInventoryRecord_pms_SpareOrderItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareOrderItemInnerInfo_pms_SpareReqApprovalStage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_SpareReqApprovalStage_pms_SpareReqApprovalStage" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreInventoryRecord_pms_StoreItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreItem_pms_StoreLocation" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreItem_pms_StoreSection" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreReserve_pms_StoreItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreReserveForJobPlan_pms_StoreItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_StoreSection_pms_StoreSection" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_Template_pms_TGroup" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_pms_SubTemplate" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_pms_Template" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob_File_pms_TJob" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJob_pms_TObject" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJobPeriod_pms_TJob" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TJobSpare_pms_TJob" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_File_pms_TObject" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObject_pms_TObject" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TObjectSpare_pms_TObject" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairList_File_pms_TRepairList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListItem_pms_TRepairList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListItem_File_pms_TRepairListItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListItem_pms_TRepairListItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListSpare_pms_TRepairListItem" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_pms_TRepairListSpare_File_pms_TRepairListSpare" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_CheckListItem_prs_CheckList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract_prs_CheckList" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_CheckListItem_prs_DocumentType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonDocument_prs_DocumentType" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_File_prs_PersonCard" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_InnerInfo_prs_PersonCard" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_prs_Qualification" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCard_ShipType_prs_PersonCard" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonCardPhoto_prs_PersonCard" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract_prs_PersonCard" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonDocument_prs_PersonCard" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract_File_prs_PersonContract" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonContract_prs_СrewСhangePlan" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.FK_prs_PersonDocument_File_prs_PersonDocument" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.bdg_PaidmentDocumentFileInfo" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.bdg_Supplier_ShipOwner" />
+        <AssociationConnector Association="SOFTMARINE_COMPANYModel.bdg_SupplierFileInfo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

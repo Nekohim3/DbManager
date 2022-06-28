@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DBManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" MinHeight="300" Width="800" MinWidth="800" d:DataContext="{d:DesignInstance local:MWVM}">
+        Title="MainWindow" Height="600" MinHeight="600" Width="800" MinWidth="800" d:DataContext="{d:DesignInstance local:MWVM}">
     <Grid>
         <!-- main -->
         <Grid>
@@ -63,11 +63,18 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <Button Grid.Row="0" Content="Сделать бекап текущей БД" Margin="3" Command="{Binding CreateBackupFromDbCommand}"/>
                         <Button Grid.Row="1" Content="Добавить бекап из файла" Margin="3" Command="{Binding AddBackupFromFileCommand}"/>
                         <Button Grid.Row="2" Content="Восстановить выбранный бекап" Margin="3" Command="{Binding RestoreSelectedBackupCommand}"/>
                         <Button Grid.Row="3" Content="Удалить выбранный бекап" Margin="3" Command="{Binding DeleteSelectedBackupCommand}"/>
+                        <Button Grid.Row="4" Content="Очистить базу" Margin="3" Command="{Binding ClearDBCommand}"/>
+                        <Button Grid.Row="5" Content="Спереть данные из базы" Margin="3" Command="{Binding GrabSelectedDBCommand}"/>
+                        <Button Grid.Row="6" Content="Вставить данные в базу" Margin="3" Command="{Binding InsertIntoSelectedDBCommand}"/>
                     </Grid>
                 </Grid>
                 <Grid Grid.Column="1">

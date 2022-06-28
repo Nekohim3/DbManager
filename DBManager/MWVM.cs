@@ -1,14 +1,24 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data.Entity;
+using System.Data.Entity.Core.Metadata.Edm;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
+using System.Dynamic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Windows;
 using System.Windows.Threading;
+using System.Xml.Serialization;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.ViewModel;
 using Microsoft.SqlServer.Management.Sdk.Sfc;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using Newtonsoft.Json;
 
 namespace DBManager
 {
@@ -20,7 +30,10 @@ namespace DBManager
         public  DelegateCommand                   RestoreSelectedBackupCommand { get; }
         public  DelegateCommand                   DeleteSelectedBackupCommand  { get; }
         public  DelegateCommand                   AddBackupFromFileCommand     { get; }
-        public  DelegateCommand                   ChangeCredCommand               { get; }
+        public  DelegateCommand                   ClearDBCommand               { get; }
+        public  DelegateCommand                   GrabSelectedDBCommand        { get; }
+        public  DelegateCommand                   InsertIntoSelectedDBCommand  { get; }
+        public  DelegateCommand                   ChangeCredCommand            { get; }
         private DataBase                          _selectedDatabase;
         private ObservableCollection<DataBase>    _databaseList;
         private BackupClass                       _selectedBackup;
@@ -96,6 +109,7 @@ namespace DBManager
 
         public MWVM()
         {
+            g.Init();
             ProcessVis                   = Visibility.Hidden;
             AddDatabaseCommand           = new DelegateCommand(OnAddDatabase);
             RemoveDatabaseCommand        = new DelegateCommand(OnRemoveDatabase);
@@ -103,7 +117,11 @@ namespace DBManager
             RestoreSelectedBackupCommand = new DelegateCommand(OnRestoreSelectedBackup, () => SelectedBackup   != null);
             AddBackupFromFileCommand     = new DelegateCommand(OnAddBackupFromFile,     () => SelectedDatabase != null);
             DeleteSelectedBackupCommand  = new DelegateCommand(OnRemoveBackup,          () => SelectedBackup   != null);
-            ChangeCredCommand         = new DelegateCommand(ChangeCred);
+            ChangeCredCommand            = new DelegateCommand(ChangeCred);
+
+            ClearDBCommand              = new DelegateCommand(OnClearDB);
+            GrabSelectedDBCommand       = new DelegateCommand(OnGrabData);
+            InsertIntoSelectedDBCommand = new DelegateCommand(OnInsertIntoDB);
 
 
             g.Settings                = Settings.Load() ?? new Settings();
@@ -290,10 +308,139 @@ namespace DBManager
             }
         }
 
+        private void OnClearDB()
+        {
+            var context = new SOFTMARINE_COMPANYEntities();
+            context.Database.ExecuteSqlCommand("EXEC sp_msforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT all'");
+            context.Database.ExecuteSqlCommand("EXEC sp_msforeachtable 'DELETE FROM ?'");
+            context.Database.ExecuteSqlCommand("EXEC sp_msforeachtable 'ALTER TABLE ? CHECK CONSTRAINT all'");
+        }
+
+        private void OnInsertIntoDB()
+        {
+            using (var dbContext = new SOFTMARINE_COMPANYEntities())
+            {
+                dbContext.Database.ExecuteSqlCommand("EXEC sp_msforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT all'");
+                var     str    = File.ReadAllText("qwe.txt");
+                dynamic lst    = JsonConvert.DeserializeObject(str);
+                var     dbSets = dbContext.GetType().GetProperties().Where(p => p.PropertyType.Name.StartsWith("DbSet"));
+                var tableCounter = 0;
+                foreach (var dbSetProps in dbSets)
+                {
+                    var dbSet = dbContext.Set(dbSetProps.PropertyType.GenericTypeArguments[0]);
+
+
+
+                    //var dbSet     = dbSetProps.GetValue(dbContext, null);
+                    var dbSetType = dbSet.GetType().GetGenericArguments().First();
+
+                    //var rows      = ((IEnumerable)dbSet).Cast<object>().ToArray();
+                    ////var lst1 = new List<object>();
+                    var rowCounter = 0;
+                    var rowCount   = lst[tableCounter].Count;
+                    var lst1        = new List<object>();
+                    for (var i = 0; i < rowCount; i++)
+                    {
+                        var q = Activator.CreateInstance(dbSetType);
+                        ObjectExtensions.CopyProperties(lst[tableCounter][rowCounter], q);
+                        lst1.Add(q);
+                        //dbContext.Set(dbSetType).Add(q);
+
+                        rowCounter++;
+                    }
+
+                    dbSet.AddRange(lst1);
+                    dbContext.SaveChanges();
+                    //foreach (var x in rows)
+                    //{
+                    //    //dynamic q = new ExpandoObject();
+                    //    ObjectExtensions.CopyProperties(x, q);
+                    //    rowCounter++;
+                    //    //lst1.Add(q);
+                    //}
+
+                    tableCounter++;
+                    //lst.Add(lst1);
+                }
+                dbContext.Database.ExecuteSqlCommand("EXEC sp_msforeachtable 'ALTER TABLE ? CHECK CONSTRAINT all'");
+                //var str = JsonConvert.SerializeObject(lst, Formatting.Indented);
+                //File.WriteAllText("qwe.txt", str);
+            }
+        }
+
+        private void OnGrabData()
+        {
+            var counter = 0;
+            using (var dbContext = new SOFTMARINE_COMPANYEntities())
+            {
+                
+                var dbSets = dbContext.GetType().GetProperties().Where(p => p.PropertyType.Name.StartsWith("DbSet"));
+                var lst    = new List<object>();
+                foreach (var dbSetProps in dbSets)
+                {
+                    var dbSet     = dbContext.Set(dbSetProps.PropertyType.GenericTypeArguments[0]);
+                    var dbSetType = dbSet.GetType().GetGenericArguments().First();
+                    var we        = dbSet.ToListAsync().Result;
+                    var rows      = ((IEnumerable)dbSet).Cast<object>().ToArray();
+                    var lst1      = new List<object>();
+                    foreach (var x in rows)
+                    {
+                        dynamic q = new ExpandoObject();
+                        ObjectExtensions.CopyProperties(x, q);
+                        lst1.Add(q);
+                        counter++;
+                    }
+                    lst.Add(lst1);
+                }
+
+                var str = JsonConvert.SerializeObject(lst, Formatting.Indented, new JsonSerializerSettings()
+                                                                                {
+                                                                                    TypeNameHandling = TypeNameHandling.All
+                                                                                });
+                File.WriteAllText("qwe.txt", str);
+            }
+
+
+
+            //var context = new SOFTMARINE_COMPANYEntities();
+
+            
+
+            //var mrv = context.mrv_FuelType.ToList();
+            //var lst = new List<mrv_FuelType>();
+            //foreach (var x in mrv)
+            //{
+            //    var q = new mrv_FuelType();
+            //    ObjectExtensions.CopyProperties(x, q);
+            //    lst.Add(q);
+            //}
+            ////var str = JsonConvert.SerializeObject(lst);
+            ////context.mrv_FuelType.Add(new mrv_FuelType() { Id = 5489, EmissionFactor = 33, IdChangeInfo = 4, Explanation = "qqq", Name = "test", ShortName = "shtest"});
+            ////context.SaveChanges();
+
+
+            //using (var dataContext = new SOFTMARINE_COMPANYEntities())
+            //using (var transaction = dataContext.Database.BeginTransaction())
+            //{
+            //    var fuel = new mrv_FuelType() { Id = 12, EmissionFactor = 33, IdChangeInfo = 111112, Explanation = "qqq", Name = "test", ShortName = "shtest" };
+
+            //    //dataContext.Database.ExecuteSqlCommand("EXEC sp_msforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT all'");
+            //    dataContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT [dbo].[mrv_FuelType] ON");
+
+            //    dataContext.mrv_FuelType.Add(fuel);
+            //    dataContext.SaveChanges();
+
+            //    dataContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT [dbo].[mrv_FuelType] OFF");
+            //    //dataContext.Database.ExecuteSqlCommand("EXEC sp_msforeachtable 'ALTER TABLE ? CHECK CONSTRAINT all'");
+
+            //    transaction.Commit();
+            //}
+        }
+
         private void OnRemoveBackup()
         {
             ProcessText = "Удаление бэкапа, плис вэит...";
-            ProcessVis  = Visibility.Visible;
+            ProcessVis = Visibility.Visible;
             ThreadPool.QueueUserWorkItem(x =>
                                          {
                                              if (File.Exists($"{g.Settings.DirForDbData}\\{SelectedDatabase.Instance}_{SelectedDatabase.Name}\\{SelectedBackup.Name}\\{SelectedBackup.Name}.mdf"))
@@ -318,7 +465,6 @@ namespace DBManager
                                              ProcessVis = Visibility.Hidden;
                                          });
         }
-
         private void ChangeCred()
         {
             var f  = new Login();
@@ -344,6 +490,8 @@ namespace DBManager
                 File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
             }
         }
+
+        
 
     }
 }
