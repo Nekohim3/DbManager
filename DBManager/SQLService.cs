@@ -53,7 +53,7 @@ namespace DBManager
                 };
 
                 var srv = new Server(conn);
-
+                srv.KillAllProcesses(databaseName);
                 var res = new Restore();
                 res.Devices.AddDevice(bakFilePath, DeviceType.File);
 
